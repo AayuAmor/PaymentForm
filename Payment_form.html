@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <header>
+        <h1>In Lecture-3 We are going to Learn about "WEB FORM" as "Payment Form"</h1>
+    </header>
+    <hr>
+    <hr>
+    <form action="">
+        <!--"form" tag is used for making form in the html-->
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p>Name: * <input type="text" name="name" required></p>
+        <!--"input" tag is used for user input, there are various types of input tags..// For text input= "input:text" is used -->
+        <!--"required" attribute is used to make the user input necessary to fill to Submit the form-->
+        <p>
+            <fieldset>
+                <legend>Gender * </legend>
+            Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="female"required>
+            Custom <input type="radio" name="gender" id="custom"required>
+                
+        </fieldset>
+        <!--"fieldset" tag is used to Organize the data at one field/Box, 
+        "legend" tag is used to give title in the field box,
+        "input:radio" tag is used to give radio buttom in the web-->
+        </p>
+        <p>Address: <textarea name="address" id="address" cols="100" rows="8"></textarea> </p>
+        <!--"textarea" tag is used for inserting a box type area for the text in the web page-->
+        <p>Email: * <input type="email" name="email" id="email" required></p>
+        <!--"input:email" tag is used to give user input for email which genuinlly detect the email is right or wrong -->
+        <p>Pincode: * <input type="number" name="pincode" id="pincode" required> </p>
+        <!--"input:number" tag is used for user input as Numbers-->
+        <h2>Payment Information </h2>
+        <p>Card Type: *
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">MasterCard</option>
+                
+            </select>
+            <!--"select" tag is used to make a list of user input & select one option of the multiple choice -->
+        </p>
+        <p>
+            Card Number *<input type="number" name="card_number" id="card_number" required>
+        </p>
+        <P>
+            Expiration Date: *<input type="date" name="exp_date" id="exp_date" required>
+        </P>
+        <!--"input:date" tag is used to display user input date box/sheet to select date-->
+        <p>
+            CVV * <input type="password" name="cvv" id="cvv" required>
+        </p>
+        <!--"input:password" tag is used to make user input that is hidden as Password-->
+        <input type="submit" value="Pay Now">
+        <!--"input:submit" tag is used to display button to proceed// the button name is displayed as [the Value name="......"]-->
+
+
+    </form>
+    <h3>Here the "Form method" is <i>Get type</i> so that all the data inserted in the form is Encoded in the URL and then Goes to Server</h3>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">&copy; 2024 | Tero Bau</a>
+    </footer>
+</body>
+</html>
