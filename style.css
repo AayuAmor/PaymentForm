@@ -1,22 +1,21 @@
 
 body{
     background-color: #a0c9dd;
-}
-div{
- nav{
-        background-color:lightblue ;
-        color: black;
-        
-        header{
-            background-color: plum;
-            text-align: center;
-            /* padding: 20px; */
-            border-color: #000000;
-            border: solid 1rem;
-        }
-        
+}  
+#navbar{
+    background-color:lightblue ;
+    color: black;
+    position: sticky;
+    top:0;
+    header{
+    background-color: plum;
+    text-align: center;
+    /* padding: 20px; */
+    border-color: #000000;
+    border: solid 1rem;
     }
 }
+
 #footer{
     height: 60px;
     background-color: #0f1111;
