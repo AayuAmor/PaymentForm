@@ -4,43 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>In Lecture-3 We are going to Learn about "WEB FORM" as "Payment Form"</h1>
-    </header>
+    <div id="navbar">
+        <nav>
+            <header>
+                <h1>Payment Form</h1>
+            </header>
+        </nav>
+    </div>
+   
     <hr>
     <hr>
     <form action="">
-        <h1>Payment Form</h1>
-        <h2>Contact Information</h2>
-        <p>
-            <label for="name">Name: *</label>
-            <input type="text" name="name" id="name" required>
-        </p>
-        <p>
-            <fieldset>
-                <legend>Gender *</legend>
-                <label for="male">Male</label>
-                <input type="radio" name="gender" id="male" required>
-                <label for="female">Female</label>
-                <input type="radio" name="gender" id="female" required>
-                <label for="custom">Custom</label>
-                <input type="radio" name="gender" id="custom" required>
-            </fieldset>
-        </p>
-        <p>
-            <label for="address">Address:</label>
-            <textarea name="address" id="address" cols="100" rows="8"></textarea>
-        </p>
-        <p>
-            <label for="email">Email: *</label>
-            <input type="email" name="email" id="email" required>
-        </p>
-        <p>
-            <label for="pincode">Pincode: *</label>
-            <input type="number" name="pincode" id="pincode" required>
-        </p>
+        <div id="contactInfo">
+            <h2>Contact Information</h2>
+            <p>
+                <label for="name">Name: *</label>
+                <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Gender *</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" required>
+                    <label for="custom">Custom</label>
+                    <input type="radio" name="gender" id="custom" required>
+                </fieldset>
+            </p>
+            <p>
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="100" rows="8"></textarea>
+            </p>
+            <p>
+                <label for="email">Email: *</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="pincode">Pincode: *</label>
+                <input type="number" name="pincode" id="pincode" required>
+            </p>
+        </div>
+
+       <div id="paymentInfo">
         <h2>Payment Information</h2>
         <p>
             <label for="card_type">Card Type: *</label>
@@ -64,15 +73,20 @@
             <input type="password" name="cvv" id="cvv" required>
         </p>
         <input type="submit" value="Pay Now">
+       </div>
     </form>
     <h3>Here the "Form method" is <i>Get type</i> so that all the data inserted in the form is Encoded in the URL and then Goes to Server</h3>
-    <footer>
-        <a href="#">FAQ</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Refund Policy</a>
-        <a href="#">&copy; 2024 | Tero Bau</a>
-    </footer>
+    
+        <footer>
+            <div id="footer">
+            <div class="footer-tab"> <a href="#">FAQ</a></div>
+            <div class="footer-tab"> <a href="#">Contact Us</a></div>
+            <div class="footer-tab"> <a href="#">Terms of Use</a></div>
+            <div class="footer-tab"> <a href="#">Privacy Policy</a></div>
+            <div class="footer-tab"> <a href="#">Refund Policy</a></div>
+            <div class="footer-tab"> <a href="#">&copy; 2025 | The DoberMans</a></div>
+            </div>
+        </footer>
+   
 </body>
 </html>

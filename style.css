@@ -1,0 +1,41 @@
+
+body{
+    background-color: #a0c9dd;
+}
+div{
+ nav{
+        background-color:lightblue ;
+        color: black;
+        
+        header{
+            background-color: plum;
+            text-align: center;
+            /* padding: 20px; */
+            border-color: #000000;
+            border: solid 1rem;
+        }
+        
+    }
+}
+#footer{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    color:white;
+    text-decoration: none;
+    
+
+}
+.footer-tab{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+
